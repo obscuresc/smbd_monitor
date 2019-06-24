@@ -1,0 +1,17 @@
+● smbd.service - Samba SMB Daemon
+   Loaded: loaded (/lib/systemd/system/smbd.service; enabled; vendor preset: enabled)
+   Active: active (running) since Fri 2019-06-21 23:10:13 ACST; 1min 29s ago
+     Docs: man:smbd(8)
+           man:samba(7)
+           man:smb.conf(5)
+ Main PID: 30337 (smbd)
+   Status: "smbd: ready to serve connections..."
+    Tasks: 4 (limit: 4537)
+   CGroup: /system.slice/smbd.service
+           ├─30337 /usr/sbin/smbd --foreground --no-process-group
+           ├─30339 /usr/sbin/smbd --foreground --no-process-group
+           ├─30340 /usr/sbin/smbd --foreground --no-process-group
+           └─30341 /usr/sbin/smbd --foreground --no-process-group
+
+Jun 21 23:10:13 jacklap systemd[1]: Starting Samba SMB Daemon...
+Jun 21 23:10:13 jacklap systemd[1]: Started Samba SMB Daemon.
